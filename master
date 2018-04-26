@@ -1,0 +1,59 @@
+.roundg {
+   width: 220px;
+   height: 500px;
+   background: blue;
+   margin-left: -37.5px;
+   position: absolute;
+}
+.roundg2 {
+margin-left: -25px;
+}
+.roundd {
+    width: 135px;
+    height: 500px;
+    background: blue;
+    margin-left: 565px;
+    position: absolute;
+}
+.recoval {
+margin-top: -9px;
+margin-left: 106px;
+}
+.recd {
+margin-left: 106px;
+}
+.bord1 {
+height: 500px;
+width: 70px;
+background: white;
+ }
+</style>
+<h1>Guy Cardon | Peinture Geometrique </h1>
+<div class="wraper">
+<!-- ronds gauche -->
+<div class="bord1"></div>
+<div class="roundg"> 
+<div class="roundg2">
+<div id="circle"></div>
+<div id="circle"></div>
+<div id="circle"></div>
+</div>
+<div id="rectangle"></div>
+</div>
+
+<!-- ovales -->
+<div class="oval-wrap"> 
+<div id="oval"></div>
+<div id="oval"></div>
+<div id="oval"></div>
+<div class="recoval">
+<div id="rectangle"></div>
+</div>
+</div>
+<!-- ronds droite -->
+<div class="roundd">
+<div id="circle"></div>
+<div id="circle"></div>
+<div id="circle"></div>
+<div id="rectangle" class="recd"></div>
+</div>
