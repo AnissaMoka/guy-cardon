@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <title>Guy Cardon</title>
@@ -24,23 +24,6 @@ background: green;
   color: rgba(0,0,0,1);
   background: #ea3d1e;
 }
-.transition {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  display: block;
-  -webkit-transition: margin 500ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -moz-transition: margin 500ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -o-transition: margin 500ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  transition: margin 500ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-}
-.transition:hover {
-   display: block;
-  -webkit-transition: margin 320ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -moz-transition: margin 320ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  -o-transition: margin 320ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-  transition: margin 320ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
-}
 
 #circle {
   width: 160px;
@@ -55,8 +38,7 @@ background: green;
     width: 50px;
     height: 481px;
     background: rgba(232,171,39,1);
-    position: absolute;
-    margin-top: -480px;
+    position: absolute;   
 }
 .oval-wrap {
     width: 405px;
@@ -86,15 +68,23 @@ margin-left: -25px;
 margin-left: 106px;
 }
 .recd {
-margin-left: 58px;
+    margin-left: 21px;
+    margin-top: -161px;
+}
+.recm {
+margin-top: -480px;
+}
+.recg {
+    margin-top: -480px;
+    margin-left: 58px;
 }
 .bordure1 {
     width: 50px;
     height: 481px;
     background: white;
     position: absolute;
-    margin-left: -50px;
-    margin-top: -480px;
+    margin-left: -29px;
+    margin-top: -172px;
 }
 .bordure2 {
     width: 81px;
@@ -104,27 +94,60 @@ margin-left: 58px;
     margin-left: 108px;
     margin-top: -480px;
    }
+/*animations */
+.container {
+    position: absolute;
+    width: 50%;
+    margin-top: -479px;
+    margin-left: 307px;
+}
+
+#cercleanim {
+  width: 160px;
+  height: 160px;
+  border: none;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: green;
+  background: rgb(234, 61, 30);
+}
+
+.overlay {
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background-color: green;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  margin-left: 70%;
+  height: 100%;
+}
+
 </style>
 <h1>Guy Cardon | Peinture Geometrique </h1>
 <div class="wraper">
 <!-- ronds gauche -->
-<div class="roundg">
+<div class="roundg"> 
 <div class="roundg2">
-<div id="circle" class="transition"></div>
+<div id="circle"></div>
 <div id="circle"></div>
 <div id="circle"></div>
 </div>
-<div class="bordure1"></div>
-<div id="rectangle"></div>
 </div>
 
 <!-- ovales -->
-<div class="oval-wrap">
-<div id="oval" class="transition"></div>
+<div class="oval-wrap"> 
+<div id="oval"></div>
 <div id="oval"></div>
 <div id="oval"></div>
 <div class="recoval">
-<div id="rectangle"></div>
+<div id="rectangle" class="recm"></div>
 </div>
 </div>
 <!-- ronds droite -->
@@ -135,10 +158,20 @@ margin-left: 58px;
 <div id="circle"></div>
 </div>
 <div class="bordure2"></div>
-<div id="rectangle" class="recd"></div>
+<div id="rectangle" class="recg"></div>
 </div>
+</div>
+<div class="container">
+  <div id="cercleanim" class="overlay"></div>
+  <div id="cercleanim">
+  </div>
+<div class="bordure1"></div>
+<div id="rectangle" class="recd"></div>
 </div>
 </div>
 <h2>Travail en HTML et CSS réalisé par Anissa Moukaouame à partir d'une <a href="https://images.google.be/imgres?imgurl=http%3A%2F%2Fdigitaliiis.com%2Fartistes%2Fimages%2FGuy%2520Cardon%2F8.jpg&imgrefurl=http%3A%2F%2Fwww.digitaliiis.com%2FGALLERY%2Fartistes%2Fprofiles%2Fzoom_profile_full_screen_X11.php%3Fidentite%3DGuy%2BCardon&docid=Yc6pg1Y0GfOGiM&tbnid=C6BGNmey3hb1MM%3A&vet=1&w=699&h=700&itg=1&source=sh%2Fx%2Fim" target="blank"> peinture de Guy Cardon</a></h2>
 </body>
 </html>
+
+
+
